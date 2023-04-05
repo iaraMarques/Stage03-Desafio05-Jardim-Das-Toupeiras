@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("assets/fundo.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.conteiner {
+  display: flex;
+  width: 100%;
+}
+
+.buracos {
+  display: grid;
+  width: 90rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-top: 50rem;
+}
+
+.buraco {
+  margin: 0 auto;
+  width: 18rem;
+  height: 12rem;
+  background-image: url('assets/toupeira6.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.buraco.um,
+.buraco.dois,
+.buraco.tres,
+.buraco.quatro,
+.buraco.cinco,
+.buraco.seis {
+  animation-name: AppearanceOfTheMole;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+.buraco.um {
+  animation-delay: 3s;
+}
+
+.buraco.dois {
+  animation-delay: 6s;
+}
+
+.buraco.tres {
+  animation-delay: 9s;
+}
+
+.buraco.quatro {
+  animation-delay: 12s;
+}
+
+.buraco.cinco {
+  animation-delay: 15s;
+}
+
+.buraco.seis {
+  animation-delay: 18s;
+}
+
+@keyframes AppearanceOfTheMole {
+  0% { background-image: url('assets/toupeira6.svg'); } 
+  16% { background-image: url('assets/toupeira1.svg'); } 
+  32% { background-image: url('assets/toupeira2.svg'); }
+  48% { background-image: url('assets/toupeira3.svg'); }
+  64% { background-image: url('assets/toupeira4.svg'); }
+  80% { background-image: url('assets/toupeira5.svg'); }
+  100% { background-image: url('assets/toupeira6.svg'); }
+}
+
+@media  (max-width: 1600px) {
+  .buracos {
+    padding-top: 40rem;
+  }
+}
+
+@media  (max-width: 1480px) {
+  .buracos {
+    padding-top: 23rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .buracos {
+    padding-top: 20rem;
+  }
+}
+
+@media  (max-width: 960px) {
+  .buracos {
+    padding-top: 18rem;
+  }
+  
+  .buraco {
+    width: 16rem;
+    height: 10rem;
+  }
+}
+
+@media  (max-width: 800px) {
+  .buracos {
+    padding-top: 15rem;
+  }
+  
+  .buraco {
+    width: 13rem;
+    height: 7rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .buracos {
+    padding-top: 25rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  
+  .buraco {
+    width: 15rem;
+    height: 9rem;
+  }
+}
