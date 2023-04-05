@@ -23,13 +23,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML 
 - CSS
-- Git e Github
+- Github
 - Figma
 
 ## 💻 Projeto
 
 <p align="center">
-  Neste Desafio 05, animações foram criadas usando KeyFrames,Display Flex e Display Grid para fazer com que as toupeiras apareçam no jardim.
+  Neste Desafio 05, animações foram criadas usando KeyFrames, Display Flex e Display Grid para fazer com que as toupeiras apareçam no jardim.
 </p>
       
 <br/>
